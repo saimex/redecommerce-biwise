@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--RED CONNECTOR FORM VIEW INHERIT -->
+    <record id="red_connector_instance_form_view" model="ir.ui.view">
+        <field name="name">RED CONNECTOR FORM INHERIT</field>
+        <field name="model">red.connector.instance</field>
+        <field name="inherit_id" ref="red_common_connector.red_connector_instance_form_view"/>
+        <field name="arch" type="xml">
+          <field name="provider_id" position="after">
+              <field name="int_api_key" required="provider_id == 'intcomex'" invisible="provider_id != 'intcomex'"/>
+              <field name="int_access_key" required="provider_id == 'intcomex'" invisible="provider_id != 'intcomex'"/>
+              <field name="int_url_get_products" required="provider_id == 'intcomex'" invisible="provider_id != 'intcomex'"/>
+              <field name="int_url_get_stock" required="provider_id == 'intcomex'" invisible="provider_id != 'intcomex'"/>
+              <field name="int_url_get_price" required="provider_id == 'intcomex'" invisible="provider_id != 'intcomex'"/>
+          </field>
+        </field>
+    </record>
+</odoo>

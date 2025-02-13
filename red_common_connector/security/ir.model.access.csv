@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_red_connector_instance_all,RED CONNECTOR INSTANCE ALL,model_red_connector_instance,,1,0,0,0
+access_red_connector_instance_manager,RED CONNECTOR INSTANCE Manager,model_red_connector_instance,red_common_connector.group_red_connector_manager,1,1,1,1
+access_red_integration_logs_all,RED INTEGRATION LOGS ALL,model_red_integration_logs,,1,0,0,0
+access_red_integration_logs_manager,RED INTEGRATION LOGS Manager,model_red_integration_logs,base.group_system,1,1,1,1

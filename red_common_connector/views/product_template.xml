@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--PRODUCT TEMPLATE FORM VIEW INHERIT-->
+    <record id="product_template_only_form_view" model="ir.ui.view">
+        <field name="name">PRODUCT TEMPLATE FORM VIEW INHERIT</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+             <page name="variants" position="after">
+                 <field name="instance_id" invisible="1"/>
+                 <page name="connection_data" string="Data Product Connection" invisible="'instance_id' == False">
+                     <group>
+                         <field name="provider_id" readonly="1"/>
+                         <field name="sku_provider" readonly="1"/>
+                         <field name="price_sale_provider" readonly="1"/>
+                         <field name="price_cost_provider" readonly="1"/>
+                         <field name="qty_stock_provider" readonly="1"/>
+                         <field name="provider_category" readonly="1"/>
+                         <field name="no_update_byprovider"/>
+                     </group>
+                </page>
+             </page>
+        </field>
+    </record>
+</odoo>

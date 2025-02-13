@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--RED CONNECTOR FORM VIEW INHERIT -->
+    <record id="red_connector_instance_form_view" model="ir.ui.view">
+        <field name="name">RED CONNECTOR FORM INHERIT</field>
+        <field name="model">red.connector.instance</field>
+        <field name="inherit_id" ref="red_common_connector.red_connector_instance_form_view"/>
+        <field name="arch" type="xml">
+            <field name="provider_id" position="after">
+                <field name="dataformas_url" required="provider_id == 'dataformas'" invisible="provider_id != 'dataformas'"/>
+                <field name="dataformas_token" required="provider_id == 'dataformas'" invisible="provider_id != 'dataformas'"/>
+            </field>
+        </field>
+    </record>
+</odoo>
