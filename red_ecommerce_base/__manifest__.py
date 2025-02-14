@@ -18,7 +18,7 @@
     'author': 'RED ECOMMERCE',
     'website': 'www.ecommerce.cr',
     'license': 'LGPL-3',
-    'depends': ['base','cr_electronic_invoice'],
+    'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
         #'views/res_partner.xml',
