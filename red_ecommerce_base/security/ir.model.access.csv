@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_ResCountryCountyPublic,res.country.county.all,l10n_cr_country_codes.model_res_country_county,,1,0,0,0
-access_ResCountryDistrictPublic,res.country.district.all,l10n_cr_country_codes.model_res_country_district,,1,0,0,0
-access_ResCountryNeighborhoodPublic,res.country.neighborhood.all,l10n_cr_country_codes.model_res_country_neighborhood,,1,0,0,0
